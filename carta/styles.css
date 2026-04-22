@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+}
+
+.carta {
+    color: #444;
+    background: #eee9e9;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    max-width: 500px;
+    margin: auto;
+    animation: aparecer 1.2s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 42px;
+    text-align: center;
+    color: #ad0f0f;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.firma {
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+button {
+    font-family: 'Grenze Gotisch', cursive;
+    display: block;
+    margin: 25px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #ad0f0f;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sorpresa {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ad0f0f;
+}
+
+/* corazones */
+.corazon {
+    position: fixed;
+    bottom: -20px;
+    color: #f8bbd0;
+    animation: flotar 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes flotar {
+    from {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
